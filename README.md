@@ -1,7 +1,8 @@
 # WORDPRESS XMLRPC BRUTE FORCE
 
 <div align="center">
-    <samp>Wordpress XMLRPC Brute Force With Variations Password, With System Multicall</samp>
+    <samp>Wordpress XMLRPC Brute Force With Variations Password, With System Multicall,
+    Have a single target locking and mass target.</samp>
 </div>
 
 
