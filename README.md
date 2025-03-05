@@ -12,3 +12,4 @@ python3 -m pip install -r requirements.txt
 ```
 
 <h1>Usage : </h1>
+<img src="https://raw.githubusercontent.com/MadExploits/WP-XMLRPC/refs/heads/main/usage.gif">
