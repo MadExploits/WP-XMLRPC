@@ -16,7 +16,7 @@ class XMLRPCBRUTEFORCE:
     def __init__(self, url):
         self.file_pass = "/usr/share/wordlists/pass.txt"
         self.website = url
-        self.username = ["admin"]
+        self.username = []
         self.password = []
 
         self.useragents = [
