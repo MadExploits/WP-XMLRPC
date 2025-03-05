@@ -23,10 +23,6 @@ python3 -m pip install -r requirements.txt
 
 I'm not responsible for what you guys do using my tools!
 
-<div align="center">
-<img src="https://raw.githubusercontent.com/MadExploits/Gecko/main/image.png">  
-</div>
-
 
 <div align="center">
  <h1> Support me : </h1>
