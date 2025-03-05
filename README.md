@@ -1,7 +1,14 @@
 # WORDPRESS XMLRPC BRUTE FORCE
 
-<div>
-  <center>
+<div align="center">
     <samp>Wordpress XMLRPC Brute Force With Variations Password, With System Multicall</samp>
-  </center>
 </div>
+
+
+<h1>Installation : </h1>
+
+```
+python3 -m pip install -r requirements.txt
+```
+
+<h1>Usage : </h1>
