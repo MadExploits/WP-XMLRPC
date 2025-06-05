@@ -9,12 +9,8 @@
 <h1>Installation : </h1>
 
 ```
-JUST OPEN THE EXE FILES
+JUST OPEN THE INSTALLER 
 ```
-
-<h1>Usage : </h1>
-
-<img src="[![Uploading image.png…]()](https://github.com/user-attachments/assets/5d384627-9f49-49e7-b0af-2f6b0f6ec0f4)>
 
 
 <div align="center"><h1>Read this</h1></div>
