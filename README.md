@@ -1,5 +1,4 @@
-<center>
-  # WordPress XMLRPC Brute Force Tool
+<h1>WordPress XMLRPC Brute Force Tool</h1>
 
 <div align="center">
   <samp>
@@ -38,5 +37,3 @@ Mass target mode for bulk testing multiple WordPress sites
 If this project helps you, consider supporting development by buying me a coffee:
 
 <div align="center"> <a href="https://www.buymeacoffee.com/muhsatria" target="_blank" rel="noopener noreferrer"> <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=muhsatria&button_colour=FFDD00&font_colour=000000&font_family=Comic&outline_colour=000000&coffee_colour=ffffff" alt="Buy Me A Coffee"/> </a> </div>
-
-</center>
