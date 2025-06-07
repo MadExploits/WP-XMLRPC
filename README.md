@@ -17,7 +17,9 @@ Run the installer executable to get started:
 Open The Installer.exe
 ```
 
-##⚠️ Disclaimer
+
+
+## ⚠️ Disclaimer
 
 This tool is intended solely for ethical security testing and research purposes. Unauthorized use on websites you do not own or have explicit permission to test is illegal and unethical.
 
@@ -25,7 +27,7 @@ Use responsibly — I am not responsible for any misuse of this tool.
 
 
 
-##💡 Features
+## 💡 Features
 
 Password variation brute force attempts
 
@@ -35,7 +37,7 @@ Single-target mode with lockout prevention
 
 Mass target mode for bulk testing multiple WordPress sites
 
-##🙏 Support
+## 🙏 Support
 
 If this project helps you, consider supporting development by buying me a coffee:
 
