@@ -14,7 +14,7 @@
 Run the installer executable to get started:
 
 ```
-Open The Installer.exe
+xmlrpc_brutefoce_installer.exe
 ```
 
 
