@@ -1,4 +1,4 @@
-<h1>WordPress XMLRPC Brute Force Tool</h1>
+<h1 align="center">WordPress XMLRPC Brute Force Tool</h1>
 
 <div align="center">
   <samp>
